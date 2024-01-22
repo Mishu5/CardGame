@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kierki.client.KierkiController">
+
+    <top>
+        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="1280.0" spacing="5">
+            <Label fx:id="p3" alignment="CENTER" text="Gracz 3" />
+            <Label fx:id="player3score"/>
+            <HBox alignment="CENTER">
+
+            </HBox>
+
+        </VBox>
+    </top>
+
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="1280.0" spacing="5">
+            <Label fx:id="p1" text="Gracz 1" />
+            <Label fx:id="player1score"/>
+            <HBox alignment="CENTER">
+                <Button fx:id="button1" onAction="#handleButtonClick" text="Karta 1" />
+                <Button fx:id="button2" onAction="#handleButtonClick" text="Karta 2" />
+                <Button fx:id="button3" onAction="#handleButtonClick" text="Karta 3" />
+                <Button fx:id="button4" onAction="#handleButtonClick" text="Karta 4" />
+                <Button fx:id="button5" onAction="#handleButtonClick" text="Karta 5" />
+                <Button fx:id="button6" onAction="#handleButtonClick" text="Karta 6" />
+                <Button fx:id="button7" onAction="#handleButtonClick" text="Karta 7" />
+                <Button fx:id="button8" onAction="#handleButtonClick" text="Karta 8" />
+                <Button fx:id="button9" onAction="#handleButtonClick" text="Karta 9" />
+                <Button fx:id="button10" onAction="#handleButtonClick" text="Karta 10" />
+                <Button fx:id="button11" onAction="#handleButtonClick" text="Karta 11" />
+                <Button fx:id="button12" onAction="#handleButtonClick" text="Karta 12" />
+                <Button fx:id="button13" onAction="#handleButtonClick" text="Karta 13" />
+            </HBox>
+        </VBox>
+
+    </bottom>
+
+    <left>
+        <HBox alignment="CENTER" prefHeight="553.0" prefWidth="150.0" spacing="5">
+            <Label fx:id="p2" text="Gracz 2" />
+            <Label fx:id="player2score"/>
+            <VBox>
+
+            </VBox>
+        </HBox>
+    </left>
+
+    <right>
+
+        <HBox alignment="CENTER" prefHeight="553.0" prefWidth="150.0" spacing="5">
+            <Label fx:id="p4" text="Gracz 4" />
+            <Label fx:id="player4score"/>
+            <VBox>
+
+            </VBox>
+        </HBox>
+    </right>
+
+    <center>
+
+        <HBox alignment="CENTER" spacing="5" xmlns:fx="http://javafx.com/fxml">
+
+            <Label fx:id="player1" text="Gracz 1" />
+            <Label fx:id="player2" text="Gracz 2" />
+            <Label fx:id="player3" text="Gracz 3" />
+            <Label fx:id="player4" text="Gracz 4" />
+            <VBox>
+                <Label fx:id="handIndex" text="Aktualne rozdanie: "/>
+                <Label text="Aktualna kolej: "/>
+                <Label fx:id="currentPlayer"/>
+            </VBox>
+
+        </HBox>
+    </center>
+
+</BorderPane>
